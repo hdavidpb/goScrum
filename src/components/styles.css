@@ -1,0 +1,83 @@
+.login_form {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 13px;
+}
+.login_form h1 {
+  width: 100%;
+  text-align: left;
+}
+.input_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+label {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 900;
+}
+.input_container input {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.215);
+  border-radius: 4px;
+}
+
+.login_form button {
+  padding: 0.5em;
+  width: 100%;
+  background-color: rgba(255, 69, 43, 1);
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 6px;
+  border: none;
+}
+
+.errors {
+  position: absolute;
+
+  font-size: 13px;
+  color: red;
+  bottom: -16.5px;
+  left: 0;
+  font-weight: 900;
+  transition: all 0.4s;
+}
+
+.input_check_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.input_check_container input {
+  width: 15px;
+  height: 15px;
+}
+.input_check_container label {
+  flex: 1;
+  text-align: left;
+}
+@media (min-width: 600px) {
+  .login_form {
+    width: 400px;
+  }
+  .login_form {
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(233, 233, 233, 1);
+  }
+}
